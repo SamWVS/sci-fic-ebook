@@ -1,0 +1,283 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    
+    h1 {
+    color: #333333;
+    text-align: left;
+}
+	h2.Headline {
+	
+	font-size: 30px;
+	text-align: center;
+	}
+	
+	.capa-livro {
+	
+	width: 45%;
+	max-width: 400px;
+	min-width: 280px;
+	height: auto;
+	
+	display: block;
+	margin: 30px auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+	}
+	
+	.botão_cta_1 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+	
+	}
+	
+	.botão_cta_2 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+	
+	}
+	
+	.botão_cta_3 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+	
+	}
+	
+	.botão_cta_4 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+	
+	}
+	
+	
+	.btn-compre-agora {
+		display: inline-block;
+		background-color: #5dade2;
+		align-self: center;
+		color: #ffffff;
+		text-align: center;
+		padding: 12px 30px;
+		margin: 15px 0;
+		border-radius: 25px;
+		text-decoration: none;
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+		font-size: 16px;
+		transition: all 0.3s ease; 
+		
+	}
+	
+	.btn-compre-agora:hover {
+		background-color: #e74c3c;
+		color: #ffffff;
+		cursor: pointer;
+	
+	
+	}
+	
+	.video_1 {
+	
+	max-width: 345px;
+	max-height: 70vh;
+	width: 100%;
+	margin: 20px auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	
+	}
+	
+	.video_1 video {
+		width: 100%;
+		height: 100%;
+		max-height: 70vh;
+		object-fit: contain; 
+	}
+	
+	.video_2 {
+	
+	max-width: 345px;
+	max-height: 70vh;
+	width: 100%;
+	margin: 20px auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	
+	}
+	
+	.video_2 video {
+		width: 100%;
+		height: 100%;
+		max-height: 70vh;
+		object-fit: contain; 
+	}
+	
+	.video_3 {
+	
+	max-width: 345px;
+	max-height: 70vh;
+	width: 100%;
+	margin: 20px auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	
+	}
+	
+	.video_3 video {
+		width: 100%;
+		height: 100%;
+		max-height: 70vh;
+		object-fit: contain; 
+	}
+	
+	
+	
+	p.CTA {
+		text-align: center;
+		font-size: 25px;
+	}
+	h2.Título_2 {
+	text-align: left;
+	margin-left: 25%;
+	}
+	p.Parágrafo_alinhado {
+	
+	text-align: left;
+	margin-left: 30%;
+	font-size: 20px;
+	}
+	
+	h2.CTA {
+	
+	text-align: center;
+	}
+	
+	h2.CTA_x {
+	
+	text-align: center;
+	font-size: 30px;
+	
+	}
+	
+	p.complemento {
+	
+	text-align: center;
+	
+	}
+	
+	blockquote {
+		
+		text-align: left;
+		margin-left: 30%;
+		font-size: 20px;
+	
+	}
+	
+	.Autor {
+	
+	width: 45%;
+	max-width: 400px;
+	min-width: 280px;
+	height: auto;
+	
+	display: block;
+	margin: 30px auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+	}
+	
+}
+
+@media (max-width: 768px) {
+
+	h1 {
+	
+	#margin-left: 5%;
+	margin: center;
+	font-size: 16px;
+	}
+
+	h2.Headline {
+	margin-left: 5%;
+	font-size: 22px !important;
+	
+	}
+	
+	.capa-livro {
+	margin-left: 5%;
+	font-size: 16px;
+	
+	}
+	
+	p.CTA {
+	margin-left: 5%;
+	font-size: 22px !important;
+	
+	}
+	h2.Título_2 {
+	margin-left: 5% !important;
+	font-size: 22px !important;
+	
+	}
+	
+	p.Parágrafo_alinhado {
+	
+	margin-left: 5% !important;
+	font-size: 16px !important;
+	text-align: left !important;
+	}
+	
+	h2.CTA {
+	#margin-left: 5%;
+	font-size: 20px !important;
+	justify-content: center !important;
+	
+	}
+	
+	p.complemento{
+	margin-left: 5%;
+	font-size: 15px;
+	
+	}
+	
+	blockquote {
+	margin-left: 5% !important;
+	font-size: 16px !important;
+	
+	}
+	
+	h2.CTA_x {
+	
+	text-align: center;
+	font-size: 22px;
+	
+	}
+	
+}
+
+
