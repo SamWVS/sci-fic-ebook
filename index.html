@@ -227,7 +227,7 @@
 	<script>
 document.querySelectorAll('[class^="botão_cta_"] a').forEach(function(botao) {
     botao.addEventListener('click', function() {
-        const local = this.parentElement.className;
+        const local = this.closest('[class^="botão_cta_"]').className
 
         gtag('event', 'amazon_click', {
             'button_location': local
