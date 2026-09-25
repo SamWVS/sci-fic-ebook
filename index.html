@@ -223,6 +223,20 @@
 	<b>Se essa história despertou nem que seja </br>
 	 um pouco da sua curiosidade… talvez a </br>
 	 viagem já tenha começado.</br> </b></h2>
+
+	<script>
+document.querySelectorAll('[class^="botão_cta_"] a').forEach(function(botao) {
+    botao.addEventListener('click', function() {
+        const local = this.parentElement.className;
+
+        gtag('event', 'amazon_click', {
+            'button_location': local
+        });
+    });
+});
+</script>
+
+	
 </body>
 
 </html>
