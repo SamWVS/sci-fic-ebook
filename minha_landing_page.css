@@ -1,0 +1,534 @@
+/* SETA */
+
+.scroll-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 18px auto 30px;
+  color: #F00;
+  #color: #d0d0d0;
+  font-size: 16px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-hint a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: inherit;
+  animation: arrow-bounce 1.6s ease-in-out infinite;
+}
+
+.scroll-hint svg {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@keyframes arrow-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(9px); }
+}
+
+.scroll-hint.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* BOTÕES DE COMPRA */
+.purchase-button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* EFEITO DE LUZ */
+.purchase-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  background: linear-gradient(
+    110deg,
+    transparent,
+    rgba(255, 255, 255, 0.75),
+    transparent
+  );
+  transform: translateX(-180%) skewX(-20deg);
+  animation: button-shine 2.0s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes button-shine {
+  0%, 25% {
+    transform: translateX(-180%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(280%) skewX(-20deg);
+  }
+}
+
+/* ACESSIBILIDADE */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-hint a,
+  .purchase-button::after {
+    animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ROLAGEM SUAVE */
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    
+    
+.secao-topo {
+	background: url('space_light.webp') no-repeat center center;
+	background-size: 60% 100%;
+	background-attachment: scroll;   /* ou fixed, se quiser */
+	padding-bottom: 40px;
+
+
+}
+
+.secao-resto-1 {
+		
+	background: url('space.webp') no-repeat center center;
+	background-size: 60% 100%;
+	background-attachment: scroll;
+	padding-top: 30px;
+
+}
+    
+    background-color: #615a5a;
+    font-family: Arial, sans-serif;
+    
+    #background: url('fundo_azul_espacial.webp') no-repeat center center fixed;
+    #background-size: cover;
+    #background-color: #0a0f1e;
+    
+    
+    h1 {
+    color: #FFFFFF;
+    #text-shadow: 2px 2px 4px #000000;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    text-align: left;
+    font-size: 27px;
+    margin-left: 22%;
+}
+	h2.Headline {
+	
+	text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+	color: #FFFFFF;
+	font-size: 40px;
+	text-align: center;
+	}
+	
+	.gif {
+	
+	max-width: 345px;
+	max-height: 70vh;
+	width: 100%;
+	margin: 20px auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	
+	}
+	
+	
+	.capa-livro {
+	
+	width: 45%;
+	max-width: 400px;
+	min-width: 280px;
+	height: auto;
+	
+	display: block;
+	margin: 30px auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+	}
+	
+	.botão_cta_1 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+	
+	}
+	
+	.botão_cta_2 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+	
+	}
+	
+	.botão_cta_3 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+	
+	}
+	
+	.botão_cta_4 {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+	
+	}
+	
+	
+	.btn-compre-agora {
+		display: inline-block;
+		background-color: #5dade2;
+		align-self: center;
+		color: #ffffff;
+		text-align: center;
+		padding: 12px 30px;
+		margin: 15px 0;
+		border-radius: 25px;
+		text-decoration: none;
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+		font-size: 16px;
+		transition: all 0.3s ease; 
+		
+	}
+	
+	.btn-compre-agora:hover {
+		background-color: #e74c3c;
+		color: #ffffff;
+		cursor: pointer;
+	
+	
+	}
+	
+	.video_1 {
+	
+	max-width: 345px;
+	max-height: 70vh;
+	width: 100%;
+	margin: 20px auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	
+	}
+	
+	.video_1 video {
+		width: 100%;
+		height: 100%;
+		max-height: 70vh;
+		object-fit: contain; 
+	}
+	
+	.video_2 {
+	
+	max-width: 345px;
+	max-height: 70vh;
+	width: 100%;
+	margin: 20px auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	
+	}
+	
+	.video_2 video {
+		width: 100%;
+		height: 100%;
+		max-height: 70vh;
+		object-fit: contain; 
+	}
+	
+	.video_3 {
+	
+	max-width: 345px;
+	max-height: 70vh;
+	width: 100%;
+	margin: 20px auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	
+	}
+	
+	.video_3 video {
+		width: 100%;
+		height: 100%;
+		max-height: 70vh;
+		object-fit: contain; 
+	}
+	
+	
+	
+	p.CTA {
+		text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 25px;
+	}
+	h2.Título_2 {
+	text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+	color: #FFFFFF;
+	text-align: left;
+	margin-left: 25%;
+	}
+	p.Parágrafo_alinhado {
+	#text-shadow: 2px 2px 4px #000000;
+	text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+	color: #FFFFFF;
+	text-align: left;
+	margin-left: 30%;
+	font-size: 20px;
+	}
+	
+	h2.CTA {
+	text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+	text-align: center;
+	color: #FFFFFF;
+	}
+	
+	h2.CTA_x {
+	text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 30px;
+	
+	}
+	
+	p.complemento {
+	text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+	text-align: center;
+	color: #FFFFFF;
+	
+	}
+	
+	blockquote {
+		text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+		color: #FFFFFF;
+		text-align: left;
+		margin-left: 30%;
+		font-size: 20px;
+	
+	}
+	
+	.Autor {
+	
+	width: 45%;
+	max-width: 400px;
+	min-width: 280px;
+	height: auto;
+	
+	display: block;
+	margin: 30px auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+	}
+	
+	
+}
+
+@media (max-width: 768px) {
+
+
+	.secao-topo {
+	background: url('space_light.webp') no-repeat center center;
+	background-size: 120% 100% !important;
+	background-attachment: scroll;   /* ou fixed, se quiser */
+	padding-bottom: 40px;
+
+
+}
+
+	.secao-resto-1 {
+		
+	background: url('recorte_melhorada_bw_classic-1.jpg') no-repeat center center;
+	background-size: 160% 120% !important;
+	background-attachment: scroll;
+	padding-top: 30px;
+
+}
+
+	h1 {
+	color: #FFFFF;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	margin-left: 4% !important;
+	margin: center;
+	font-size: 16px !important;
+	}
+
+	h2.Headline {	
+	margin-left: 5%;
+	font-size: 22px !important;
+	
+	}
+	
+	.gif {
+	
+	max-width: 345px !important;
+	max-height: 48vh !important;
+	width: 80% !important;
+	margin: 20px auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	
+	}
+	
+	.gif video {
+		width: 100%;
+		height: 100%;
+		max-height: 70vh;
+		object-fit: contain; 
+	}
+	
+	[.capa-livro {
+	margin-left: 5%;
+	font-size: 16px;
+	
+	}]
+	
+	.capa-livro {
+	
+	width: 45% !important;
+	max-width: 400px !important;
+	min-width: 280px !important;
+	height: auto;
+	
+	display: block;
+	margin: 30px auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+	}
+	
+	p.CTA {
+	margin-left: 5%;
+	font-size: 22px !important;
+	
+	}
+	h2.Título_2 {
+	margin-left: 5% !important;
+	font-size: 22px !important;
+	
+	}
+	
+	p.Parágrafo_alinhado {
+	
+	margin-left: 5% !important;
+	font-size: 14px !important;
+	text-align: left !important;
+	}
+	
+	h2.CTA {
+	#margin-left: 5%;
+	font-size: 20px !important;
+	justify-content: center !important;
+	
+	}
+	
+	p.complemento{
+	margin-left: 5%;
+	font-size: 15px;
+	
+	}
+	
+	blockquote {
+	margin-left: 5% !important;
+	font-size: 16px !important;
+	
+	}
+	
+	h2.CTA_x {
+	
+	text-align: center;
+	font-size: 22px;
+	
+	}
+	
+}
+
+
